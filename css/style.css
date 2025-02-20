@@ -41,7 +41,16 @@
   box-sizing: border-box; }
 
 
- 
+  html, body {
+    overflow: auto !important;
+    height: auto !important;
+}
+
+body {
+  position: relative !important;
+}
+
+
 
 
 
