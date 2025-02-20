@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/style.css">
 	<link href="images/hr logo title.png" rel="icon">
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <body  data-target=".site-navbar-target" data-offset="300">
 	  
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -288,7 +288,7 @@
 			  <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="150">
 				<div class="skill-item" style="animation: bounceIn 1.2s ease;">
 				  <img src="images/c-1.svg" alt="C Programming" class="img-fluid" style="width: 50px; height: 50px;">
-				  <p class="mt-2">C Programming</p>
+				  <p class="mt-2">C</p>
 				</div>
 			  </div>
 		
@@ -511,6 +511,20 @@
             $(".navbar-collapse").collapse("hide"); 
         });
     });
+
+	document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.nav-link').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    });
+});
+
 </script>
 
   
