@@ -107,7 +107,12 @@ p {
 
   
  
-  
+.hero {
+  height: auto !important; /* Ensures content is scrollable */
+  min-height: 100vh; /* Keeps the section full screen but allows scrolling */
+  overflow: auto; /* Allows scrolling inside the section */
+}
+
   
   
   
